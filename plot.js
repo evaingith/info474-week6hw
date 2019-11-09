@@ -6,13 +6,13 @@ let svgContainer = ""; // keep SVG reference in global scope
 let popChartContainer = "";
 const msm = {
     width: 1300,
-    height: 700,
+    height: 750,
     marginTop: 50,
     marginLeft: 50,
 }
 const small_msm = {
     width: 500,
-    height: 500,
+    height: 300,
     marginTop: 100,
     marginLeft: 50  
 }
@@ -103,6 +103,7 @@ function plotData(map) {
         .attr('width', small_msm.width)
         .attr('height', small_msm.height)
 
+
     // append data to SVG and plot as points
     svgContainer.selectAll('.dot')
         .data(curData)
@@ -123,7 +124,7 @@ function plotData(map) {
                 .style("opacity", .9);
             plotPopulation(d.country, toolChart)
             div.style("left", (d3.event.pageX) + "px")
-               .style("top", (d3.event.pageY - 28) + "px");
+               .style("top", (d3.event.pageY - 80) + "px");
             
         })
         .on("mouseout", (d) => {
