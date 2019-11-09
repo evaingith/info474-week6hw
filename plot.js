@@ -5,8 +5,8 @@ let curData = "";
 let svgContainer = ""; // keep SVG reference in global scope
 let popChartContainer = "";
 const msm = {
-    width: 1500,
-    height: 900,
+    width: 1300,
+    height: 700,
     marginTop: 50,
     marginLeft: 50,
 }
